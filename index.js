@@ -34,11 +34,12 @@ formularioEl.addEventListener('submit', e =>{
                 datosEl.style.display="flex"
                 errorEl.style.display="none"
             }else{
-                
+                errorEl.style.display="flex"
+                datosEl.style.display="none"
             }
         })
         .catch(() =>{
             errorEl.style.display="flex"
-                datosEl.style.display="none"
+            datosEl.style.display="none"
         })
 })
