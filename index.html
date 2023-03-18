@@ -10,18 +10,20 @@
     </head>
     <body>
         <div class="container">
-            <div id="buscarContenedor">
-                <input id="input" type="text"  placeholder="Busca por ciudad o region">
-                <button id="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
+            <form id="buscarContenedor">
+                <input id="input" type="text"  placeholder="Busca por ciudad o region" autofocus autocomplete="off" autocapitalize="on">
+                <button id="buscar" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
             <div class="datos">
                 <h2>Datos </h2>
-                <p>ciudad: <span id="ciudad"></span></p>
-                <p>Temperatura: <span id="temperatura"></span>ºC</p>
-                <p>Humedad: <span id="humedad"></span>%</p>
-                <p>Descripcion: <span id="descripcion"></span></p>
-                <p>Sensacion termica: <span id="senter"></span>ºC</p>
-                <p>Presion: <span id="presion"></span>hpa</p>
+                <p><span id="ciudad"></span>, <span id="country" ></span></p>
+                <div class="row">
+                    <p class="large"><span id="temperatura"></span>ºC</p>
+                    <p class="large"><span id="humedad"></span>%</p>
+                </div>
+                <p id="descripcion">></p>
+                <p class="column"><span class="small"> Sensacion termica </span> <span><span id="senter"></span>ºC</span></p>
+                <p class="column"><span class="small">Presion </span>  <span><span id="presion"></span>hpa</span></p>
             </div>
             <div class="error">
                 <img src="./404.png" alt="404">
